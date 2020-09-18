@@ -1,0 +1,22 @@
+{
+   "Version":"2012-10-17",
+   "Statement":[
+     {
+       "Sid":"111",
+       "Effect":"Deny",
+       "Principal":{"AWS":"421437952308"},
+       "Action":"s3:PutObject",
+       "Resource":"arn:aws:s3:::bucket28.96/*"
+     },
+     {
+       "Sid":"112",
+       "Effect":"Allow",
+       "Principal":{"AWS":"421437952308" },
+       "Action":"s3:PutObject",
+       "Resource":"arn:aws:s3:::bucket28.96/*",
+       "Condition": {
+         "StringEquals": {"s3:x-amz-grant-full-control":["gurkanwal-singh.chopra@hpe.com"]}
+       }
+     }
+   ]
+}

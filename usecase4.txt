@@ -2,14 +2,14 @@
    "Version":"2012-10-17",
    "Statement":[
      {
-       "Sid":"112",
+       "Sid":"113",
        "Effect":"Deny",
        "Principal":{"AWS":"421437952308"},
        "Action":"s3:PutObject",
        "Resource":"arn:aws:s3:::bucket28.96/*"
      },
      {
-       "Sid":"113",
+       "Sid":"114",
        "Effect":"Allow",
        "Principal":{"AWS":"421437952308" },
        "Action":"s3:PutObject",
